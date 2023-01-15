@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+@import './components.css';
+.flex {
+  display: flex;
+  vertical-align: middle;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-image: url("./images/netflix-bg.png");
+  background-size: cover;
+}
+
+.backdrop {
+  inset: 0;
+  position: absolute;
+  background-color: black;
+  opacity: 60%;
+}
+
+.vignette {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  box-shadow: inset 0px -45px 100px 20px black;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  position: absolute;
+  padding-inline: 3rem;
+  padding-top: 1rem;
+}
+.header-content #select-language {
+  background-color: black;
+  color: white;
+  margin-right: 2rem;
+}
+
+.body-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+  text-align: center;
+  flex-direction: column;
+}
+.body-content h1 {
+  margin-bottom: 1rem;
+  width: 45%;
+  color: white;
+  font-size: 3rem;
+  font-weight: 500;
+  line-height: 3rem;
+}
+.body-content h3 {
+  margin: 0;
+  color: white;
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+.body-content h4 {
+  color: white;
+  font-weight: 300;
+  font-size: 1.1rem;
+}
+.body-content .input-group {
+  width: 47%;
+}
+.body-content .input-group #input-email {
+  font-size: 1rem;
+}
+.body-content .input-group .btn-primary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+  border-radius: 0%;
+  font-size: 1.4rem;
+  padding-right: 0;
+}
+.body-content .input-group .btn-primary:active {
+  scale: 1;
+  opacity: 0.8;
+}/*# sourceMappingURL=index.css.map */

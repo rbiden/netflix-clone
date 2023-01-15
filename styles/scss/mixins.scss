@@ -1,0 +1,26 @@
+@mixin center-vertical {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+@mixin space-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+@mixin dark-mode {
+    background-color: $dark;
+    color: $secondary;
+}
+
+@mixin light-mode {
+    background-color: $secondary;
+    color: $dark;
+}
+
+.flex {
+    display: flex;
+    vertical-align: middle;
+}

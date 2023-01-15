@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import './components.css';
+@import './variables.scss';
+@import './mixins.scss';
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url('./images/netflix-bg.png');
+    background-size: cover;
+}
+
+.backdrop {
+    inset: 0;
+    position: absolute;
+    background-color: $dark;
+    opacity: 60%;
+}
+
+.vignette {
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    box-shadow: inset 0px -45px 100px 20px $dark;
+}
+
+.header-content {
+    @include space-between;
+    width: 90%;
+    position: absolute;
+    padding-inline: 3rem;
+    padding-top: 1rem;
+
+    #select-language {
+        @include dark-mode;
+        margin-right: 2rem;
+    }
+}
+
+.body-content {
+    @include center-vertical;
+    position: relative;
+    text-align: center;
+    flex-direction: column;
+
+    h1 {
+        margin-bottom: 1rem;
+        width: 45%;
+        color: $secondary;
+        font-size: 3rem;
+        font-weight: 500;
+        line-height: 3rem;
+    }
+
+    h3 {
+        margin: 0;
+        color: $secondary;
+        font-weight: 400;
+        font-size: 1.5rem;
+    }
+
+    h4 {
+        color: $secondary;
+        font-weight: 300;
+        font-size: 1.1rem;
+    }
+
+    .input-group {
+        width: 47%;
+
+        #input-email {
+            font-size: 1rem;
+        }
+
+        .btn-primary {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40%;
+            border-radius: 0%;
+            font-size: 1.4rem;
+            padding-right: 0;
+        }
+
+        .btn-primary:active {
+            scale: 1;
+            opacity: 0.8;
+        }
+    }
+}

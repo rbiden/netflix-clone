@@ -1,0 +1,36 @@
+select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='white' height='30' viewBox='0 0 24 24' width='35' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right center;
+  padding-inline: 1rem;
+}
+
+button, select {
+  font-weight: 500;
+  font-size: 1rem;
+  border-radius: 0.2rem;
+}
+
+.btn-primary {
+  padding: 0rem 1.2rem;
+  background-color: red;
+  color: white;
+  border: 0;
+}
+
+.btn-primary:hover {
+  cursor: pointer;
+  opacity: 90%;
+}
+
+.btn-primary:active {
+  scale: 0.95;
+}
+
+input {
+  padding: 1rem;
+  width: 100%;
+}/*# sourceMappingURL=components.css.map */
